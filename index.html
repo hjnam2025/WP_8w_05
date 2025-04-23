@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>☀️잠케어🌙</title>
+
+	<style type="text/css">
+		@import url('https://fonts.googleapis.com/earlyaccess/nanumgothic.css');
+		html{
+			font-family: 'NanumGothicLight';
+			font-family: 'NanumGothic';
+			font-family: 'NanumGothicBold';
+			font-family: 'NanumGothicExtraBold';
+			font-optical-sizing: auto;
+		  	font-weight: 200;
+		  	font-size: 16px;
+		  	word-break: keep-all;
+		  	scroll-behavior: smooth;
+		  	background: #f175ff;
+			background: linear-gradient(0deg, rgba(241, 117, 255, 1) 0%, rgba(117, 216, 255, 1) 73%, rgba(255, 185, 171, 1) 89%, rgba(83, 111, 237, 1) 100%);
+		  	}
+		.wrap{width: 800px; margin: auto; position: relative;}
+		.flex{display: flex; justify-content: space-between;}
+		body{  -ms-overflow-style: none;
+ 			}
+ 
+			::-webkit-scrollbar {
+			  display: none;
+			 }
+		
+		nav,body,h1,h2,p,ol,ul,li
+			{margin: 0; padding: 0;
+			}
+		h1{font-family: 'NanumGothicExtraBold';
+		font-weight: 800; font-size: 3rem; padding-bottom: 10px;}
+		h2{font-family: 'NanumGothicBold';
+		font-weight: 800; font-size: 2.5rem; padding-top: 10px; padding-left: 50px; padding-right: 50px; padding-bottom: 25px; line-height: 1.5}
+		h3{font-family: 'NanumGothicBold';
+		font-weight: 800; font-size: 2.5rem; line-height: 1.2}
+		p{font-family: 'NanumGothic';
+			line-height: 1.8}
+
+		header{padding: 550px 0px;}
+		footer{padding-bottom: 100px;
+		padding-top: 150px}
+
+		.logo h1{font-size: 1rem; padding: 8px 12px; cursor: pointer;}
+		.bg-header{background:url('header.png');
+					background-size: cover;
+					background-position: center}
+		#navbar {background-color: rgba(255, 255, 255, 0.5);
+				backdrop-filter: blur(10px);
+				position: sticky;	
+			 	width: 100%;
+			 }
+
+
+		ul,li{list-style: none;}
+		ul li a{text-decoration: none;
+				display: block;
+				padding: 8px 12px;
+				color:black;
+				font-family: 'NanumGothic';}
+		ul li a:hover {background: black; color:white; transition: all 1s;}
+		strong{font-family: 'NanumGothicBold';}
+		
+		.pp01{position: absolute;
+			left: -80px; top: 100px;}
+		.pp02{position: absolute;
+			left: 265px; top: 200px;}
+		.pp03{position: absolute;
+			left: 610px; top: 300px;}
+
+		.ppe01{position: absolute;
+			left: -50px; top: 390px;
+			text-align: center}
+		.ppe02{position: absolute;
+			left: 345px; top: 490px;
+			text-align: center}
+		.ppe03{position: absolute;
+			left: 680px; top: 590px;
+			text-align: center}
+
+		.end{background: url('fairy.png');
+  			background-attachment: fixed;
+			background-size: 450px 548px;
+			background-repeat: no-repeat;
+			background-position: center;
+			height: 30vh}
+		.end02{background: url('clock.png');
+  			background-attachment: fixed;
+			background-size: 680px 548px;
+			background-repeat: no-repeat;
+			background-position: center;
+			height: 180vh}
+		.안녕1{position: absolute;
+			text-align: center;
+			left: 205px; top: 100px;}
+		.안녕2{position: absolute;
+			text-align: center;
+			left: 200px; top: 450px;}
+	
+		.pro{position: absolute;
+			text-align: center;
+			line-height: 1.3;
+			left: 230px; top: 1120px;}
+		.pro1{position: absolute;
+			text-align: center;
+			line-height: 1.3;
+			left: 210px; top: 1650px;}
+	
+
+		.box{border: 1px solid black; 
+			border-radius: 50px; 
+			background-color: white;
+			margin:auto; 
+			padding: 10px 20px;
+			text-align: center;
+			}
+		.boxE{ width: 45%;
+			border-radius: 50px; 
+			background-color: skyblue;
+			margin:auto; 
+			padding: 10px 20px;
+			text-align: center;
+			font-family: 'NanumGothic';
+			line-height: 1.4;
+			}
+		.boxE-1{ width: 10%;
+			border-radius: 50px;
+			border: 1px solid skyblue;  
+			background-color: white;
+			margin:auto; 
+			padding: 6px 16px;
+			text-align: center;
+			}
+
+
+		.r-spc{margin-right: 650px;  margin-top: 45px; margin-bottom: 30px;}
+		.c-spc{padding-left: 100px; padding-right: 100px; padding-top: 30px;padding-bottom: 30px;
+			text-align: center}
+		.list01{position: absolute;
+			text-align: center;
+			line-height: 1.3;
+			left: 302px; top: 700px;
+			font-family:'NanumGothic';
+			font-size: 2rem
+		}
+		.list02{position: absolute;
+			text-align: center;
+			line-height: 1.3;
+			left: 282px; top: 0px;
+			font-family:'NanumGothic';
+			font-size: 2rem
+		}
+
+		.lil{position: absolute;
+			text-align: center;
+			line-height: 1;
+
+			font-family:'NanumGothic';
+			font-size: 2rem}
+
+		.img1{background: url('fairy1.png');
+			background-attachment: fixed;
+			background-size: 800px ;
+			background-repeat: no-repeat;
+			background-position: center;
+			height: 20vh;
+			z-index: 2}
+		.img2{background: url('fairy2.png');
+			background-attachment: fixed;
+			background-size: 800px ;
+			background-repeat: no-repeat;
+			background-position: center;
+			height: 20vh;
+			z-index: 2}
+		.img3{background: url('fairy3.png');
+			background-attachment: fixed;
+			background-size: 800px ;
+			background-repeat: no-repeat;
+			background-position: center;
+			height: 60vh;
+			z-index: 2}
+		 .two{	width: 40%;
+			    overflow: auto;
+			    position: -webkit-sticky;
+			    position: sticky;
+			    height: 100vh;
+			    top:0;
+			    padding:70px 0 0 12px;
+			    text-align:center;
+			    z-index: -1
+			}
+
+		div.scroll-container {
+			  background-color: transparent;
+			  overflow: auto;
+			  white-space: nowrap;
+			  padding: 10px;
+			}
+		div.scroll-container img {
+			  padding: 10px;
+			}
+
+	</style>
+</head>
+
+<body>
+	<nav id="navbar">
+		<div class="wrap flex"> 
+			<div class="logo">
+				<h1>잠케어</h1>			
+			</div>
+			<ul class="flex">
+				<li><a href="#s1">잠요정이란</a></li>
+				<li><a href="#s2">기능</a></li>
+				<li><a href="#s3">사용방법</a></li>
+				<li><a href="#s4">후기</a></li>
+				<li><a href="#s5">구독하기</a></li>
+			</ul>
+		</div>
+	</nav>
+	<header class="bg-header">
+		<div class="wrap">
+			
+	</header>
+
+	<section>
+		<div class="wrap">
+			<img class="pp01" src="temp.png">
+			<img class="pp02" src="temp.png">
+			<img class="pp03" src="temp.png">
+			<p class="ppe01">자기 싫어서 계속 버티다 기절</p>
+			<p class="ppe02">늦잠 자서 지각</p>
+			<p class="ppe03">결국 하루를 망치기</p>
+	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+			<h1 style="text-align: center;">혹시 내 얘기 같으신가요?!</h1>
+
+		</div>
+	</section>
+
+	<section class="end">
+		<div class="wrap">
+			<h3 class="안녕1"><span style="background-color:#ff45eb;">그런 생활은 이제 안녕!</span></h3>
+			<h3 class="안녕2"><span style="background-color:#ff45eb;"><em>잠요정</em>이 당신의 완벽한 <br>하루를 책임집니다.</span></h3>
+		</div>
+	</section>
+	<section class="end02">
+		<div class="wrap">
+			<div class="box list01" id="s1"> 잠요정이란?</div>
+				<div class="box pro">
+					<p>잠요정은 <br>여러분의 건강한 수면 라이프를 위해 고용된<br> <strong>프로 요정</strong>입니다. </p>
+				</div>
+		</div>
+	</section>
+	<section>
+		<div class="wrap ">
+			<p class="lil two" style="border: 0px;">잠요정의 종류</p>
+			<div class=" img1"></div>
+			<div class=" img2"></div>
+			<div class=" img3"></div>
+			<div class="box pro1">잠요정은 반드시, 당신이 원하는 기상/ 취침 시각에<br> 일어나고 잠들 수 있도록 도와줍니다</div>
+		</div>
+	</section>
+<br><br><br><br><br><br><br><br>
+	<section >
+		<div class="wrap">
+			<br><br><br>
+			<div class="box list02" id="s2"> 
+			잠요정의 기능</div>
+			<br><br><br><br>
+			<div class="boxE-1 r-spc">기상형</div>
+
+			<div class="boxE">기상 시각의 30분 전에 방문하여<br> 기상 시각까지 기다린 후 고객님을 깨워드립니다.</div>
+
+			<div class="scroll-container">
+				<img src="h01.png">
+				<img src="h02.png">
+				<img src="h03.png">
+				<img src="h04.png">
+			</div>
+
+			<div class="c-spc">	
+				<img src="h04.png" class="c-spc">
+				<p>기상에 도움되는 발광 기능도 있습니다.</p>
+			</div>
+
+
+			<div class="boxE-1 r-spc">취침형</div>
+
+			<div class="boxE">취침 시각의 30분 전에 방문하여 취침 시각까지 고객님이 잠에 들 수 있도록 도와드립니다.</div>
+
+			<div class="scroll-container">
+				<img src="h01.png">
+				<img src="h02.png">
+				<img src="h03.png">
+				<img src="h04.png">
+				<img src="h04.png">
+			</div>
+			
+		</div>
+	</section>
+
+
+</body>
+		<footer class="center-spacing"; style="color:gray">
+		<div class="wrap">
+		잠요정&copy;잠케어
+		</div>
+	</footer>
+</html>
